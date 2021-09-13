@@ -9,9 +9,9 @@ class ComputerProjectTwo {
     public static boolean myApp(boolean a, boolean b)
     {
         if(a)
-        {return b;}
+            return b;
         else
-        return true;
+            return true;
         }
 
         @Test
@@ -48,13 +48,9 @@ class ComputerProjectTwo {
         System.out.print("Type in true or false for 'q': " );
         q = sc.nextBoolean();
 
-        System.out.println( "P\t\tQ\t\tCONJ\tDISJ\tCON\t\tBIC\t\tXOR");
-
-
+        System.out.println( "P\tQ\tCONJ\tDISJ\tCON\tBIC\tXOR");
 
         System.out.println(p + "\t" + q + "\t" + conJ(p,q) + "\t" + disJ(p,q) + "\t" + myApp(p,q) + "\t" + Bic(p,q) + "\t" + Xor(p,q));
-
-
 
     }
 }
